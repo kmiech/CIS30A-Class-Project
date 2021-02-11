@@ -49,7 +49,9 @@ while choice_1 < 1 or choice_1 > 3:
         month = int(input("Enter the month's number (Jaunary = 1 and December = 12): "))
         day = int(input("Enter the day of the month: "))
         #if/else statement to get the year
-        if (month <= current_date.month and day < current_date.day) :
+        if (month == current_date.month and day < current_date.day) :
+            year = current_date.year + 1
+        elif(month < current_date.month):
             year = current_date.year + 1
         else:
             year = current_date.year
